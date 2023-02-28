@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    margin: 10px;
+}
+
+.header {
+    grid-area: header;
+    display: flex;
+    color: rgb(226, 226, 226);
+    flex: row wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10rem 4rem 4rem 15rem;
+    background-color: rgb(67, 40, 28);
+    height: 200px;
+}
+
+.item-list {
+    grid-area: items;
+    box-shadow: rgb(63, 63, 63) 1px 1px;
+    background-color: rgb(226, 226, 226);
+}
+
+.item{
+    display: flex;
+    flex: row wrap;
+    align-items: center;
+    color: rgb(53, 53, 53);
+    font-weight: bold;
+    background-color: white;
+}
+
+.item-quantity {
+    text-align: left;
+    margin: 10px;
+}
+
+.item-name {
+    margin: 5px;
+    text-align: left;
+
+}
+
+.item-price {
+    margin: 5px;
+    text-align: right;
+}
+
+.item, .item-detail-list {
+    list-style-type: none;
+}
+
+.item-detail-list {
+    color: rgb(59, 51, 51);
+}
+
+.info {
+    grid-area: information;
+    margin: 10px;
+}
+
+.payment-details {
+    list-style-type: none;
+}
+
+.payment {
+    grid-area: payment;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.payment-table {
+    width: 100%;
+    max-width: 500px;
+}
+
+.payment-table td:last-child {
+    text-align: right;
+}
+
+
+.info-label {
+    text-transform: uppercase;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 20px;
+    column-gap: 20px;
+    grid-template-areas: 
+    "header header"
+    "items information"
+    "payment payment";
+}
