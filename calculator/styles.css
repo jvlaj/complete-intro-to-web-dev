@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+}
+
+.calculator {
+    width: 25%;
+    height: 25%;
+    background-color: black;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+.output {
+    grid-area: output;
+    color: white;
+    background-color: black;
+    text-align: right;
+    padding: 2px;
+}
+
+.buttons {
+    margin: 1px;
+    background-color: lightgray;
+    display: grid;
+    grid-template-areas: "row1"
+    "row2 "
+    "row3"
+    "row4"
+    "row5"
+    ;
+
+}
+
+button {
+    width: 100px;
+    height: 100px;
+}
+
+.operator {
+    grid-area: operator;
+    color: white;
+    background-color: orange;
+}
+
+.row1 {
+    grid-area: row1;
+    display: flex;
+    align-content: stretch;
+    justify-content: space-between;
+
+}
+
+.row2 {
+    grid-area: row2;
+    display: flex;
+    align-content: stretch;
+    justify-content: space-between;
+}
+
+.row3 {
+    grid-area: row3;
+    display: flex;
+    align-content: stretch;
+    justify-content: space-between;
+}
+
+.row4 {
+    grid-area: row4;
+    display: flex;
+    align-content: stretch;
+    justify-content: space-between;
+}
+
+.row5 {
+    grid-area: row5;
+    display: flex;
+    align-content: stretch;
+    justify-content: space-between;
+}
+
+.divide {
+    grid-area: divide;
+}
+
+
+.items {
+}
